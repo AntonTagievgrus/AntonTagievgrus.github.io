@@ -8,6 +8,9 @@ div {
     text-align :center;
 
 }
+img{
+    width=device-width;
+}
 body {background: #d6eaf8}
 p {
   text-decoration: none;
