@@ -6,7 +6,7 @@ div {
     height: 900px;
     background: BLACK;
     text-align :center;
-
+font-weight: normal;
 }
 img{
     width: 100px;
