@@ -8,6 +8,12 @@ div {
     text-align :center;
 font-weight: normal;
 }
+#particle-div {
+    margin: 0 auto;
+    width:800px;
+    height:500px;
+}
+
 img{
     width: 100px;
 }
