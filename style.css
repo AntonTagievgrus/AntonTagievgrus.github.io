@@ -30,6 +30,7 @@ img{
 	line-height: 1;
 	transform: translateX(0px);
 	transition: .3s cubic-bezier(.86,0,.07,1);
+	text-transform: uppercase;
 }
 .btn-inner i {
 	margin-left: 5px;
