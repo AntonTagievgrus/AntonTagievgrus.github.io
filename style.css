@@ -1,60 +1,64 @@
-body{
- width=device-width;
- height:3000;
-background: BLACK;
- text-align:center;
- margin:0;
+body {
+  align-items: center;
+  background: #c0e090;
+  background: -webkit-linear-gradient(120deg, #c0e090, #F6D8E4);
+  background: linear-gradient(120deg, #c0e090, #F6D8E4);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Nunito Sans', sans-serif;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
 }
 img{
- width: 350px;
+	width:350px;
 }
-.shadow-btn {	
-	position: relative;
-	padding: 15px 40px;
-	margin: 0 20px;
-	background: #fff9ef;
-	font-family: 'Montserrat Alternates', sans-serif;
-	color: #fe7660;
-	text-transform: lowercase;
-	border: 2px solid #052464;	    
-	font-size: 16px;
-	font-weight: 600;
-	outline: none;
-	cursor: pointer;
+	.button {
+  height: 60px;
+  margin: 30px 0;
+  position: relative;
+  width: 200px;
 }
-.btn-inner {
-	display: flex;
-	align-items: center;
+.submit {
+  align-items: center;
+  background: #273439;
+  border: 0;
+  border-radius: 15px;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  height: 60px;
+  justify-content: center;
+  position: absolute;
+  transition: background 300ms, opacity 500ms 800ms;
+  user-select: none;
+  width: 200px;
 }
-.text {   
-	line-height: 1;
-	transform: translateX(0px);
-	transition: .3s cubic-bezier(.86,0,.07,1);
-	text-transform: uppercase;
+.submit:hover {
+  background: #0e232e;
 }
-.btn-inner i {
-	margin-left: 5px;
-	font-size: 14px;
-	transition: transform .3s cubic-bezier(.86,0,.07,1), opacity .3s;
+svg {
+  left: -200px;
+  position: absolute;
+  top: -60px;
+  transform: scale(1);
 }
-.shadow  {
-    position: absolute;
-    top: 9px;
-    left: 9px;
-    width: 100%;
-    height: 100%;
-    background: #98dfd7;
-    z-index: -1;
-    transition: .3s ease;   
-    transform: translate3d(0,0,0);
+path {
+  fill:#0e232e;
+  stroke:#0e232e;
+  transform-origin: 50%;
+  transition: transform 1200ms cubic-bezier(0.6, -0.48, 0.735, 0.045), fill 1200ms, stroke 1200ms;
 }
-.shadow-btn:hover .text {
-	transform:translateX(8px);
-}
-.shadow-btn:hover i {
-	transform: translateX(100%);
-	opacity: 0;
-}
-.shadow-btn:hover .shadow {
-	transform: translate3d(3px,3px,0);
+.refresh {
+  bottom: 10px;
+  cursor: pointer;
+  font-weight: 400;
+  left: auto;
+  position: absolute;
+  right: 30px;
+  top: auto;
+  width: 50px;
 }
