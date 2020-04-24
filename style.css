@@ -1,12 +1,13 @@
 body {
 	 width=device-width;
   height: 1000px;
-  background: BLACK;
+ 
     text-align :center;;
   margin-top:0;
   margin-bottom: 0;
   margin-left:0;
   margin-right:0;
+	background: #1D1B26;
 }
 img {
   width:300px;
