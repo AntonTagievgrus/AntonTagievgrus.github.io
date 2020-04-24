@@ -7,8 +7,9 @@ body {
   flex-direction: column;
   font-family: 'Nunito Sans', sans-serif;
   justify-content: center;
-  height: 100vh;
+  height: 3000;
   margin: 0;
+	 text-align :center;
 }
 img{
 	width:350px;
