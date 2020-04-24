@@ -13,28 +13,8 @@ function reset1(path) {
   path.style.fill = '#273439';
   path.style.stroke = '#273439';
 }
-
-function anim2(path, i) {
-  path.style.transitionDuration = '1000ms';
-  path.style.transitionDelay = `${i * 50}ms`;
-  path.style.transformOrigin = `50%`;
-  path.style.transform = `scale(0) translateX(${100 + i * 20}px)`;
-  path.style.fill = '#777';
-  path.style.stroke = '#555';
-}
-
-
-function reset2(path) {
-  path.style.transitionDuration = 0;
-  path.style.transitionDelay = 0;
-  path.style.transformOrigin = `50%`;
-  path.style.transform = `scale(1) translateX(0)`;
-  path.style.fill = '#273439';
-  path.style.stroke = '#273439';
-}
-
-const anims = [anim1, anim2, anim1],
-      resets = [reset1, reset2, reset1],
+const anims = [anim1],
+      resets = [reset1],
       buttons = Array.from(document.querySelectorAll('.button')),
       refresh = document.querySelector('.refresh')
 buttons.forEach((button, i) => {
