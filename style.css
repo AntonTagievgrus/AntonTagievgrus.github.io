@@ -1,65 +1,47 @@
 body {
-  align-items: center;
-  background: #c0e090;
-  background: -webkit-linear-gradient(120deg, #c0e090, #F6D8E4);
-  background: linear-gradient(120deg, #c0e090, #F6D8E4);
-  display: flex;
-  flex-direction: column;
-  font-family: 'Nunito Sans', sans-serif;
-  justify-content: center;
+	 width=device-width;
   height: 1000px;
-  margin: 0;
-	 text-align :center;
+  background: BLACK;
+    text-align :center;;
+  margin-top:0;
+  margin-bottom: 0;
+  margin-left:0;
+  margin-right:0;
 }
-img{
-	width:350px;
+img {
+  width:300px;
 }
-	.button {
-  height: 60px;
-  margin: 30px 0;
+.button-container a {
+  text-decoration: none;
+  outline: none;
+  color: white;
+  display: inline-block;
   position: relative;
-  width: 200px;
+  padding: 15px 30px;
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  border-image-slice: 1;
+  margin: 10px 20px;   font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 2px;
+  transition: .8s cubic-bezier(.165,.84,.44,1);
 }
-.submit {
-  align-items: center;
-  background: #273439;
-  border: 0;
-  border-radius: 15px;
-  cursor: pointer;
-  color: #fff;
-  display: flex;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 20px;
-  font-weight: 200;
-  height: 60px;
-  justify-content: center;
+.button-container a:before {
+  content: "";
   position: absolute;
-  transition: background 300ms, opacity 500ms 800ms;
-  user-select: none;
-  width: 200px;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  z-index: -1;
+  color: white;
+  background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  transition: .8s cubic-bezier(.165,.84,.44,1);
 }
-.submit:hover {
-  background: #0e232e;
-}
-svg {
-  left: -200px;
-  position: absolute;
-  top: -60px;
-  transform: scale(1);
-}
-path {
-  fill:#0e232e;
-  stroke:#0e232e;
-  transform-origin: 50%;
-  transition: transform 1200ms cubic-bezier(0.6, -0.48, 0.735, 0.045), fill 1200ms, stroke 1200ms;
-}
-.refresh {
-  bottom: 10px;
-  cursor: pointer;
-  font-weight: 400;
-  left: auto;
-  position: absolute;
-  right: 30px;
+a:hover {background: rgba(255,255,255,0);}
+a:hover:before {
+  bottom: 0%;
   top: auto;
-  width: 50px;
+  height: 100%;
 }
