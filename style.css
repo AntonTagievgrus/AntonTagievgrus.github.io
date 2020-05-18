@@ -12,7 +12,6 @@ body {
 img {
   width:300px;
 }
-
  .background {
             width: 100%;
             min-height: 100%;
@@ -32,8 +31,15 @@ img {
             overflow: hidden;
         }
     
-       
+        p {
+            font-family: font;
+        }
 
+        a {
+            font-family: font;
+        }
+
+ 
       
 a {
   text-decoration: none;
