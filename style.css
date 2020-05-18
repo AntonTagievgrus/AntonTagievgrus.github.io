@@ -2,7 +2,7 @@ body {
 	 width=device-width;
   
  
-    text-align :center;;
+    text-align :center;
   margin-top:0;
   margin-bottom: 0;
   margin-left:0;
@@ -72,7 +72,7 @@ a {
   letter-spacing: 3px;
   font-weight: 600;
   color: #524f4e;
-  background: black;
+  background: #000000;
   box-shadow: 0 8px 15px rgba(0,0,0,.1);
   transition: .3s;
 }
