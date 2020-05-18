@@ -9,7 +9,7 @@
    <title>atagiev</title>
 <link rel="icon" type="image" href="https://code.s3.yandex.net/web-code/playlist-favicon.ico">
   <link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
+
 
 
 	
@@ -29,5 +29,29 @@
 		<a href="//github.com/AntonTagievgrus">GitHub</a>
 		<a href="//vk.com/Antontagiev">VK</a>
 </div>
+	<script type="5148a01f2648c2bec1cd2195-text/javascript">        
+        function updateTime(timeObject) {
+            var today = new Date();
+            var date = today.getDate().toString().length == 1 ? "0" + today.getDate() : today.getDate();
+            var months = (today.getMonth() + 1).toString().length == 1 ? "0" + (today.getMonth() + 1) : (today.getMonth() + 1);
+            var date = date + '.' + months + '.' + today.getFullYear();
+
+            var hours = today.getHours().toString().length == 1 ? "0" + today.getHours() : today.getHours();
+            var minutes = today.getMinutes().toString().length == 1 ? "0" + today.getMinutes() : today.getMinutes();
+            var seconds = today.getSeconds().toString().length == 1 ? "0" + today.getSeconds() : today.getSeconds();
+            var time = today.getHours() + ":" + minutes + ":" + seconds;
+
+            var dateTime = time + " " + date;
+    
+            timeObject.textContent = dateTime;
+        }
+            
+        timeElem = document.getElementById("time");
+        updateTime(timeElem);
+        setInterval(function() {
+            updateTime(timeElem);
+        }, 1000);
+    </script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="5148a01f2648c2bec1cd2195-|49" defer="">
 </body>
 				</html>
